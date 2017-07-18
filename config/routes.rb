@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'show/:id'    => 'post#show'      # 특정 글 보기
   get 'edit/:id'    => 'post#edit'      # 글 편집 페이지
   post 'update'     => 'post#update'    # 글 편집
-  
+  post 'result'      => 'post#result'   # 검색 결과 페이지
+
 
 end

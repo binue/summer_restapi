@@ -40,4 +40,14 @@ class PostController < ApplicationController
 
     redirect_to "/show/#{updatePost.id}"
   end
+  
+  def result
+
+    if params[:search]
+      @resultPost = Post.search(params[:search]).reverse
+      @keyword = params[:search]
+    end
+    
+  end  
+  
 end
