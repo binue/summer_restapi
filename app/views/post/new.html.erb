@@ -1,0 +1,18 @@
+<h1>CREATE POST</h1>
+<hr>
+<%= form_tag('/create') do %>
+    <div class="form-group row">
+        <input type="text" class="form-control col-md-12" id="frmTitle" name="title" placeholder="제목을 입력해 주세요." />
+    </div>
+    <div class="form-group row">
+        <textarea class="form-control col-md-12" id="frmContent" name="content" placeholder="내용을 입력해 주세요." rows="20"></textarea>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-2">
+            <a href="/" class="btn btn-default">목록으로 돌아가기</a>
+        </div>
+        <div class="col-md-2 col-md-offset-8">
+            <input type="submit" value="글 작성하기" id="frmSubmit" class="form-control btn btn-success">
+        </div>
+    </div>
+<% end %>
